@@ -1,16 +1,25 @@
 import styled from "styled-components";
 import { BsCartDashFill, BsFillFilePersonFill } from "react-icons/bs";
+import { Link as RouterLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <DIV>
       <div className="container">
         <nav>
           <ul>
-            <li className="logo">MyCloths</li>
+            <RouterLink to="/">
+              <li className="logo">MyCloths</li>
+            </RouterLink>
             <li></li>
-            <li>Home</li>
-            <li>Cloths</li>
-            <li>Fashion</li>
+            <RouterLink to="/">
+              <li>Home</li>
+            </RouterLink>
+            <RouterLink to="/clothes">
+              <li>Cloths</li>
+            </RouterLink>
+            <RouterLink to="/clothes">
+              <li>Fashion</li>
+            </RouterLink>
             <li>Blog</li>
             <li></li>
             <li>
