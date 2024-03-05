@@ -1,3 +1,4 @@
+import Blog from "../Pages/Blog";
 import Cart from "../Pages/Cart";
 import CheckoutForm from "../Pages/CheckoutForm ";
 import Clothes from "../Pages/Clothes";
@@ -13,6 +14,7 @@ export default function AllRoutes() {
         <Route path="/Cart" element={<Cart />}></Route>
         <Route path="/checkout" element={<CheckoutForm />}></Route>
         <Route path="/checkout_done" element={<DonePage />}></Route>
+        <Route path="/blogs" element={<Blog />}></Route>
       </Routes>
     </div>
   );

@@ -20,7 +20,9 @@ export default function Navbar() {
             <RouterLink to="/clothes">
               <li>Fashion</li>
             </RouterLink>
-            <li>Blog</li>
+            <RouterLink to="/blogs">
+              <li>Blog</li>
+            </RouterLink>
             <li></li>
             <li>
               <RouterLink to="/cart">

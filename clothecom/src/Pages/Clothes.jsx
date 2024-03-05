@@ -22,7 +22,6 @@ export default function Clothes() {
       .catch((error) => console.error("Error fetching data:", error));
   }, [page]);
 
-  //   console.log(clothingData);
   function shuffle(array) {
     let currentIndex = array.length,
       randomIndex;
@@ -42,11 +41,7 @@ export default function Clothes() {
   const handleCart = (ele) => {
     const existingCart =
       JSON.parse(localStorage.getItem("myclothesCart")) || [];
-
-    // Push the new element into the existing array
     existingCart.push(ele);
-
-    // Save the updated array back to localStorage
     localStorage.setItem("myclothesCart", JSON.stringify(existingCart));
     alert("Product Added to Cart successfully 🎊🎊");
   };

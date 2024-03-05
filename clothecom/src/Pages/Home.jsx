@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import MarqueeRight from "./MarqueeRight";
 import MarqueeLeft from "./MarqueeLeft";
+import { Link as RouterLink } from "react-router-dom";
 export default function Home() {
   let array = [
     {
@@ -38,12 +39,12 @@ export default function Home() {
           {array.map((ele, i) => (
             <div className="card" key={i}>
               <div className="img_container">
-                <img src={ele.img} alt="Product Image" />
+                <RouterLink to="/clothes">
+                  <img src={ele.img} alt="Product Image" />
+                </RouterLink>
               </div>
               <div className="card-content">
                 <h3 className="card-title">{ele.name}</h3>
-                {/* <p className="card-price">$19.99</p>
-                <button className="btn-cart">Add to Cart</button> */}
               </div>
             </div>
           ))}
