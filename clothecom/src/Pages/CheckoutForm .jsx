@@ -78,6 +78,7 @@ const CheckoutForm = () => {
       {showPopup && (
         <div className="popup">
           <div className="card">
+            <h4> please check your details before!</h4>
             <img
               src="https://w7.pngwing.com/pngs/247/564/png-transparent-computer-icons-user-profile-user-avatar-blue-heroes-electric-blue.png"
               alt="User Image"
