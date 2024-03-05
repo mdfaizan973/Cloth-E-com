@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { Link as RouterLink } from "react-router-dom";
+
 export default function Cart() {
   const [cartItems, setCartItems] = useState(
     JSON.parse(localStorage.getItem("myclothesCart")) || []
@@ -56,7 +58,9 @@ export default function Cart() {
         <div className="total-box">
           <div className="total-items">Total Items: {cartItems.length} </div>
           <div className="total-price">Total Price: $ {getTotalPrice()}</div>
-          <button className="checkout">Checkout</button>
+          <RouterLink to="/checkout">
+            <button className="checkout">Checkout</button>{" "}
+          </RouterLink>
         </div>
       </div>
     </DIV>
