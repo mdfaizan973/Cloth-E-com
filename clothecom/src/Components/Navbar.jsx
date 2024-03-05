@@ -23,7 +23,9 @@ export default function Navbar() {
             <li>Blog</li>
             <li></li>
             <li>
-              <BsCartDashFill />
+              <RouterLink to="/cart">
+                <BsCartDashFill />
+              </RouterLink>
             </li>
             <li>
               <BsFillFilePersonFill />

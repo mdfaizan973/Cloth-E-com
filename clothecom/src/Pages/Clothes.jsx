@@ -48,6 +48,7 @@ export default function Clothes() {
 
     // Save the updated array back to localStorage
     localStorage.setItem("myclothesCart", JSON.stringify(existingCart));
+    alert("Product Added to Cart successfully 🎊🎊");
   };
   return (
     <DIV>
