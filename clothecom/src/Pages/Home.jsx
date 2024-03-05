@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import MarqueeRight from "./MarqueeRight";
 import MarqueeLeft from "./MarqueeLeft";
-// import Marquee from "./Marquee";
 export default function Home() {
   let array = [
     {
@@ -51,7 +50,6 @@ export default function Home() {
         </div>
         <MarqueeLeft />
 
-        {/* <Marquee /> */}
         <p className="paragraph">
           Discover the perfect blend of style and comfort with our extensive
           collection of clothing on our website. From casual everyday essentials
